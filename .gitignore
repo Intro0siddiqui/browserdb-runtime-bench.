@@ -1,0 +1,15 @@
+# Bun
+node_modules/
+bun.lock
+
+# BrowserDB Data
+test_bdb_data/
+
+# SQLite Data
+test_sqlite.db
+test_sqlite.db-journal
+test_sqlite.db-shm
+test_sqlite.db-wal
+
+# Compiled Artifacts
+browser-db-core/bindings/target/

@@ -1,7 +1,7 @@
 import { dlopen, FFIType, suffix } from "bun:ffi";
 import { join } from "path";
 
-const libPath = join(import.meta.dir, "../browser-db-core/bindings/target/release/libbrowserdb." + suffix);
+const libPath = join(import.meta.dir, "../../browser-db-core/bindings/target/release/libbrowserdb." + suffix);
 
 const { symbols } = dlopen(libPath, {
     browserdb_open: {

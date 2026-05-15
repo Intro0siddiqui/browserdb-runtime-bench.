@@ -47,7 +47,7 @@ async function runTest() {
 
     await Deno.mkdir(BDB_PATH, { recursive: true });
 
-    const command = new Deno.Command("/home/jules/.deno/bin/deno", {
+    const command = new Deno.Command(Deno.execPath(), {
         args: ["run", "-A", "--unstable-ffi", "src/deno/test1_worker.ts"],
         stdout: "piped",
         stderr: "piped",
